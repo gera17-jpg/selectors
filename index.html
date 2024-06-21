@@ -1,0 +1,84 @@
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors</title>
+    <style>
+      ::selection{
+        background-color:brown;
+        color:white;
+      }
+
+      ::marker{
+        color:blue;
+      }
+
+      p::first-letter{
+        font-size:50px;
+        color:red;
+      }
+
+      .choose::before{
+        content:"Check out the Lists";
+        font-size:20px;
+        margin:0;
+      }
+      
+      #second:after{
+        content:"The End";
+        font-size:25px;
+      }
+
+      .btn:hover{
+        background-color:pink;
+        font-size:20px;
+        border:1px red solid;
+      }
+
+      .btn:active{
+        background-color:brown;
+        color:#fff;
+      }
+
+      .par:first-letter{
+        color:brown;
+      }
+
+      input:focus{
+        background-color: pink;
+      }
+
+      a:visited{
+        color:green;
+      }
+
+      form:nth-child(2){
+        font-size:15px;
+      }
+
+      a[href="www.google.com"]{
+        color:violet;
+      }
+        
+    </style>
+  </head>
+  <body>
+      <form>
+        <label for="name">Name</label> &nbsp
+        <input type="text"  id="name" autocapitalize="name" required/><br><br>
+        <label for="email">Email</label> &nbsp
+        <input type="email" id="email"/><br><br>
+        <input type="submit" class="btn">
+      </form>
+      <ul class="choose">
+        <li><a href="">Favorites</a></li>
+        <li><a href="">Sports</a></li>
+        <li><a href="">Schedule</a></li>
+        <li><a href="">Goals</a></li>
+      </ul>
+      <p class="par">Hoikoujijh osksj adda For more info visit <a href="https://www.studytonight.com/sass/">https://www.studytonight.com/sass/</a> jskjaijd dsad sddaa <br>adaf gfgegr esefd dfsgg dsd zssfsds ffbdgf adad cxfgds asada <br>dads dfegdgs ghyjy dsagfh dfsrrdh sdghfg df fsfsfdv <a href="www.google.com">www.google.com</a></p> 
+      <p id="second">sadjsijdiajhi fdifjdiui osfisaoid dksojkdiojdd; dsl iujdisj</p> <br>
+
+  </body>
+  </html>
